@@ -1,6 +1,6 @@
 {
-  "name": "passwordGenerator",
-  "version": "0.0.1",
+  "name": "passwordgenerator",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -10,9 +10,15 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-clipboard/clipboard": "^1.16.3",
+    "@react-native-community/slider": "^4.5.7",
+    "@react-native/new-app-screen": "0.80.2",
+    "formik": "^2.4.6",
     "react": "19.1.0",
     "react-native": "0.80.2",
-    "@react-native/new-app-screen": "0.80.2"
+    "react-native-bouncy-checkbox": "^4.1.2",
+    "react-native-device-info": "^14.0.4",
+    "yup": "^1.7.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

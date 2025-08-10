@@ -1,4 +1,4 @@
-package com.passwordgenerator
+package com.doubleivi.passwordgenerator
 
 import android.app.Application
 import com.facebook.react.PackageList
