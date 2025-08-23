@@ -10,12 +10,14 @@ import com.zoontek.rnbootsplash.RNBootSplash
 class MainActivity : ReactActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+
     try {
       RNBootSplash.init(this, R.style.BootTheme) // <- required for react-native-bootsplash
     } catch (e: Exception) {
       e.printStackTrace()
     }
-    super.onCreate(savedInstanceState)
+
   }
 
   /**
