@@ -7,7 +7,7 @@ function App(): React.JSX.Element {
   useEffect(() => {
     const init = async () => {
       // …do multiple sync or async tasks
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      await new Promise(resolve => setTimeout(resolve, 1000));
     };
 
     init().finally(async () => {
