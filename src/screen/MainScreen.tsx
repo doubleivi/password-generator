@@ -21,7 +21,7 @@ import { ThemeContext } from '../contexts/ThemeContext';
 
 const PasswordSchema = Yup.object().shape({
   passwordLength: Yup.number()
-    .min(8, 'Should be min of 8 characters')
+    .min(4, 'Should be min of 4 characters')
     .max(64, 'should be max of 64 characters')
     .required('Length is required'),
 });
@@ -291,7 +291,7 @@ const MainScreen = () => {
                     step={1}
                     value={passLength}
                     onValueChange={value => setPassLength(value)}
-                    minimumValue={8}
+                    minimumValue={4}
                     maximumValue={64}
                     minimumTrackTintColor={themeColor.sliderTrackMin}
                     maximumTrackTintColor={themeColor.sliderTrackMax}
